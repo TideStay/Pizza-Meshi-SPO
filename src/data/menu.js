@@ -1,69 +1,42 @@
 export const PIZZA_MENU = [
   {
-    id: 'margherita',
-    name: 'Margherita',
-    description: 'Tomato sauce, fresh mozzarella, basil',
-    price: 8.99,
+    id: 'margarita',
+    name: 'Margarita',
+    description: 'tomato sauce, basil, grana padano, mozzarella',
+    price: 13,
     emoji: '🍕',
+    isWeeklySpecial: false
   },
   {
-    id: 'pepperoni',
-    name: 'Pepperoni',
-    description: 'Tomato sauce, mozzarella, spicy pepperoni',
-    price: 10.99,
+    id: 'marinara',
+    name: 'Marinara',
+    description: 'tomato sauce, oregano, olive oil, garlic (+ anchovies 1€)',
+    price: 12,
+    emoji: '🍅',
+    isWeeklySpecial: false
+  },
+  {
+    id: 'peppi',
+    name: 'Peppi',
+    description: 'tomato sauce, mozzarella, pepperoni, whipped ricotta, hot honey',
+    price: 15,
     emoji: '🌶️',
+    isWeeklySpecial: false
   },
   {
-    id: 'hawaiian',
-    name: 'Hawaiian',
-    description: 'Tomato sauce, mozzarella, ham, pineapple',
-    price: 11.49,
-    emoji: '🍍',
-  },
-  {
-    id: 'veggie',
-    name: 'Veggie Supreme',
-    description: 'Peppers, mushrooms, olives, onions, mozzarella',
-    price: 10.49,
-    emoji: '🥬',
-  },
-  {
-    id: 'bbq-chicken',
-    name: 'BBQ Chicken',
-    description: 'BBQ sauce, grilled chicken, red onion, cilantro',
-    price: 12.99,
-    emoji: '🍗',
-  },
-  {
-    id: 'four-cheese',
-    name: 'Four Cheese',
-    description: 'Mozzarella, gorgonzola, parmesan, ricotta',
-    price: 11.99,
-    emoji: '🧀',
-  },
-  {
-    id: 'meat-lovers',
-    name: 'Meat Lovers',
-    description: 'Pepperoni, sausage, bacon, ham, beef',
-    price: 13.99,
-    emoji: '🥩',
-  },
-  {
-    id: 'truffle',
-    name: 'Truffle Mushroom',
-    description: 'Truffle oil, wild mushrooms, arugula, parmesan',
-    price: 14.99,
+    id: 'bosque',
+    name: 'Bosque',
+    description: 'tomato sauce, scamorza, mushrooms, rucola, grated grana padano',
+    price: 16,
     emoji: '🍄',
+    isWeeklySpecial: true
   },
-]
-
-export const PAYMENT_METHODS = {
-  CASH: 'cash',
-  MBWAY: 'mbway',
-  REVOLUT: 'revolut',
-}
-
-export const ORDER_STATUS = {
-  ACTIVE: 'active',
-  READY: 'ready',
-}
+  {
+    id: 'blue-eye-samurai',
+    name: 'Blue eye samurai',
+    description: 'gorgonzola cream, mozzarella, grana padano, onion jam, balsamic reduction',
+    price: 16,
+    emoji: '🧀',
+    isWeeklySpecial: true
+  }
+];
