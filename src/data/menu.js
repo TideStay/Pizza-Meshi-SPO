@@ -40,3 +40,8 @@ export const PIZZA_MENU = [
     isWeeklySpecial: true
   }
 ];
+export const ORDER_STATUS = {
+  PENDING: 'pending',
+  READY: 'ready',
+  COMPLETED: 'completed'
+};
