@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import { OrderProvider } from './context/OrderContext'
 import CashierView from './views/CashierView'
@@ -7,7 +7,7 @@ import KitchenView from './views/KitchenView'
 export default function App() {
   return (
     <OrderProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<CashierView />} />
@@ -15,7 +15,7 @@ export default function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </OrderProvider>
   )
 }
